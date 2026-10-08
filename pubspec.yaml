@@ -1,0 +1,25 @@
+name: pos_voice
+description: Aplikasi Point of Sales (POS) berbasis mobile dengan fitur Voice Assistant untuk toko retail.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  intl: ">=0.19.0 <1.0.0"
+  crypto: ^3.0.3
+  speech_to_text: ^7.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
