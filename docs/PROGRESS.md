@@ -56,15 +56,15 @@ sebelum perintah suara mengubah keranjang (KNF-07).
 
 ## 5. Checklist Pengujian Manual (isi setelah menjalankan di perangkat)
 
-- [ ] Login Admin berhasil, login salah menampilkan pesan
-- [ ] Tab Produk hanya muncul untuk Admin
+- [x] Login Admin berhasil, login salah menampilkan pesan
+- [x] Tab Produk hanya muncul untuk Admin
 - [ ] Tambah, ubah, dan nonaktifkan produk
-- [ ] Sentuh produk menambah ke keranjang; melebihi stok ditolak
-- [ ] Pembayaran: nominal kurang ditolak, kembalian benar, struk tampil
-- [ ] Stok berkurang setelah transaksi; notifikasi stok menipis muncul
+- [x] Sentuh produk menambah ke keranjang; melebihi stok ditolak
+- [x] Pembayaran: nominal kurang ditolak, kembalian benar, struk tampil
+- [x] Stok berkurang setelah transaksi; notifikasi stok menipis muncul
 - [ ] Voice: "tambah dua mie goreng" (konfirmasi lalu masuk keranjang)
-- [ ] Voice: "cek stok gula", "harga teh celup", "total penjualan hari ini"
-- [ ] Voice: mode ketik bekerja saat mikrofon tidak tersedia
+- [x] Voice: "cek stok gula", "harga teh celup", "total penjualan hari ini"
+- [x] Voice: mode ketik bekerja saat mikrofon tidak tersedia
 - [ ] Riwayat: Hari Ini, 7 Hari, 30 Hari, dan detail struk
 - [ ] Aplikasi tetap berjalan tanpa internet
 
@@ -72,7 +72,7 @@ sebelum perintah suara mengubah keranjang (KNF-07).
 
 | Iterasi | Cakupan | Catatan |
 |---------|---------|---------|
-| 1 | Kerangka proyek, tema, data lokal, login | |
-| 2 | Produk, keranjang, pembayaran, struk | |
-| 3 | Voice Assistant (STT, parser, konfirmasi) | |
-| 4 | Riwayat, validasi, uji unit, dokumentasi | |
+| 1 | Kerangka proyek, tema, data lokal, login | Proyek dijalankan di emulator Android. Login awalnya gagal sampai data aplikasi dibersihkan, lalu berhasil dengan akun demo admin.|
+| 2 | Produk, keranjang, pembayaran, struk | Batas stok dan validasi nominal bayar berfungsi sesuai rancangan.|
+| 3 | Voice Assistant (STT, parser, konfirmasi) | Pengenalan suara tidak tersedia di emulator, sehingga pengujian memakai kolom ketik perintah.|
+| 4 | Riwayat, validasi, uji unit, dokumentasi | flutter test lulus 14 tes.|
